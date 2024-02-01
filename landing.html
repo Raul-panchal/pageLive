@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoveConnect - Find Your Match</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background-color: #ff5e62;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            color: #ff5e62;
+        }
+
+        p {
+            line-height: 1.6;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #ff5e62;
+            color: #fff;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #ff4347;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 30px;
+        }
+
+        .feature {
+            flex: 1;
+            text-align: center;
+            padding: 20px;
+            background-color: #f0f0f0;
+            border-radius: 10px;
+            margin: 0 10px;
+        }
+
+        .love-images {
+            text-align: center;
+            margin: 30px 0;
+        }
+
+        .love-images img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .signup-form {
+            margin-top: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .card {
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            margin: 20px;
+        }
+
+        .card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .user-info {
+            margin-bottom: 15px;
+        }
+
+        .add-friend-btn {
+            background-color: #4CAF50;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+   <!-- //////////// NavBar //////////// -->
+
+   <nav class="navbar navbar-expand-lg navbar-light bg-danger ">
+    <div style="margin-left: 251px;" class="container-fluid">
+      <a class="navbar-brand ml-2" href="#">ナビバー</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active ml-5" aria-current="page" href="#">家</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-5" href="#">リンク</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle ml-5" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                落ちる
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item ml-5" href="#">アクション</a></li>
+              <li><a class="dropdown-item" href="#">別のアクション</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item ml-5" href="#">ここに何か別のものがあります</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link disabled ml-5" href="#" tabindex="-1">ギャラリー</a>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input style="margin-top: 10px;" class="form-control me-2 ml-5" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-dark ml-5" type="submit">探す</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+
+   <!-- //////////////////////////////// -->
+
+    <div class="container">
+        <h2>なぜラブコネクトなのか？</h2>
+        <div class="features">
+            <div class="feature">
+                <h3>安全な</h3>
+                <p>あなたのプライバシーは私たちの最優先事項です。自信を持ってつながりましょう</p>
+            </div>
+            <div class="feature">
+                <h3>使いやすい</h3>
+                <p>ユーザーフレンドリーなインターフェイスにより、恋を見つけるのが簡単で楽しくなります。</p>
+            </div>
+            <div class="feature">
+                <h3>マッチングアルゴリズム</h3>
+                <p>当社の高度なアルゴリズムにより、意味のある接続のための互換性が保証されます。</p>
+            </div>
+        </div>
+
+        <h2>ラブギャラリー</h2>
+        <div class="love-images">
+            <div style="display: inline-block;" class="card">
+                <img src="./images//1.jpg" alt="User Image">
+                <div class="card-content">
+                    <div class="user-info">
+                        <h2>John Doe</h2>
+                        <p>Web Developer</p>
+                    </div>
+                    <button class="add-friend-btn">Add Friend</button>
+                </div>
+            </div>
+            <div style="display: inline-block;" class="card">
+                <img src="./images//5.jpg" alt="User Image">
+                <div class="card-content">
+                    <div class="user-info">
+                        <h2>John Doe</h2>
+                        <p>Web Developer</p>
+                    </div>
+                    <button class="add-friend-btn">Add Friend</button>
+                </div>
+            </div>
+            <div style="display: inline-block;" class="card">
+                <img src="./images//3.jpg" alt="User Image">
+                <div class="card-content">
+                    <div class="user-info">
+                        <h2>John Doe</h2>
+                        <p>Web Developer</p>
+                    </div>
+                    <button class="add-friend-btn">Add Friend</button>
+                </div>
+            </div>            
+            <div style="display: inline-block;" class="card">
+                <img src="./images//4.jpg" alt="User Image">
+                <div class="card-content">
+                    <div class="user-info">
+                        <h2>John Doe</h2>
+                        <p>Web Developer</p>
+                    </div>
+                    <button class="add-friend-btn">Add Friend</button>
+                </div>
+            </div>
+            <div style="display: inline-block;" class="card">
+                <img src="./images//2.jpg" alt="User Image">
+                <div class="card-content">
+                    <div class="user-info">
+                        <h2>John Doe</h2>
+                        <p>Web Developer</p>
+                    </div>
+                    <button class="add-friend-btn">Add Friend</button>
+                </div>
+            </div>            
+            <div style="display: inline-block;" class="card">
+                <img src="./images/6.jpg" alt="User Image">
+                <div class="card-content">
+                    <div class="user-info">
+                        <h2>John Doe</h2>
+                        <p>Web Developer</p>
+                    </div>
+                    <button class="add-friend-btn">Add Friend</button>
+                </div>
+            </div>        
+        </div>
+
+        <h2>今すぐラブコネクトに参加してください!</h2>
+        <p>今すぐサインアップして、愛を見つける旅を始めましょう。</p>
+
+        <div class="signup-form">
+            <form id="signupForm">
+                <div class="form-group">
+                    <label for="username">ユーザー名:</label>
+                    <input type="text" id="username" name="username" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Eメール：</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="password">パスワード：</label>
+                    <input type="password" id="password" name="password" required>
+                </div>
+                <div class="form-group">
+                    <label for="confirm-password">パスワードを認証する：</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                </div>
+                <button style="margin-left: 500px;" type="submit" class="cta-button ">サインアップ</button>
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        ＆コピー; 2024年のラブコネクト。無断転載を禁じます。
+    </footer>
+    <script>
+        // Adding a simple interactive feature
+        document.getElementById("signupForm").addEventListener("submit", function (event) {
+            event.preventDefault();
+            alert("Thank you for signing up! We will help you find your perfect match.");
+            // You can add additional logic here, such as sending the form data to a server.
+        });
+    </script>
+</body>
+
+</html>
